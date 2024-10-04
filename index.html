@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript">
+        function openSlideMenu(){
+            document.getElementById("menu").style.width ='250px';
+            document.getElementById("sidenav").style.marginLeft = '250px';
+        }
+        function closeSlideMenu(){
+            document.getElementById("menu").style.width = '0';
+            document.getElementById("sidenav").style.marginLeft = '0';
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="sidenav">
+        <span class="slide">
+            <a href="#" onclick="openSlideMenu()">
+            <i class="fa-solid fa-bars"></i>
+            </a>
+        </span>
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fa-solid fa-xmark"></i>
+                </a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <p>Creating Sidenav Bar</p>
+            <p>Click on the element below to open the side navigation menu.</p>
+      
+    </div>
+</body>
+</html>
